@@ -44,15 +44,13 @@ fn main() {
     // Install a schema into dgraph. Accounts have a `name` and a `balance`.
     info!(log, "setup schema");
     let mut op_schema = api::Operation::new();
-    op_schema.set_schema(
-        r#"
-            name: string @index(exact) .
-            age: int .
-            married: bool .
-            loc: geo .
-            dob: datetime .
-        "#.to_string(),
-    );
+    op_schema.schema = r#"
+        name: string @index(exact) .
+        age: int .
+        married: bool .
+        loc: geo .
+        dob: datetime .
+    "#.to_string();
     client.alter(&op_schema).expect("set schema");
 
     info!(log, "push data");
@@ -91,8 +89,8 @@ fn main() {
         ..Default::default()
     };
     let mut mutation = api::Mutation::new();
-    mutation.set_commit_now(true);
-    mutation.set_set_json(serde_json::to_vec(&p).expect("valid json"));
+    mutation.commit_now = true;
+    mutation.set_json = serde_json::to_vec(&p).expect("valid json");
     let assigned = client.mutate(&mutation).expect("set data");
     //info!(log, format!("mutation result: {:?}", mutation_txn));
 
