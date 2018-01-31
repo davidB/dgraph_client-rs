@@ -2,3 +2,8 @@
 name = "dgraph_client"
 version = "0.1.0"
 authors = ["David Bernard <david.bernard.31@gmail.com>"]
+
+[dependencies]
+grpcio = "0.2"
+futures = "^0.1.15"
+protobuf = "1.2"
