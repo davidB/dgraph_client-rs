@@ -32,6 +32,11 @@ cargo run --example dgraph_tuto01
 
 The lib used [grpcio](https://crates.io/crates/grpcio) to generate the rust code from grpc's proto file.
 
+```sh
+cargo build
+```
+
+### Update the grpc client
 
 ```sh
 # install [grpcio](https://crates.io/crates/grpcio)
@@ -41,7 +46,4 @@ cd src
 curl -O https://github.com/dgraph-io/dgraph/raw/v1.0.2/protos/api.proto
 protoc --rust_out=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_rust_plugin` api.proto
 
-# build the lib
-cd ..
-cargo build
 ```
