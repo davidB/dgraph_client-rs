@@ -1,8 +1,7 @@
 A rust client for dgraph
 ========================
 
-[![CC-0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain
-E/zero/1.0/)
+[![CC-0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)[![Build Status](https://travis-ci.org/davidB/dgraph_client-rs.svg?branch=master)](https://travis-ci.org/davidB/dgraph_client-rs)
 
 The client used the grpc channel & api of dgraph.
 
