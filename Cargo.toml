@@ -1,7 +1,13 @@
 [package]
 name = "dgraph_client"
 version = "0.1.0"
-authors = ["David Bernard <david.bernard.31@gmail.com>"]
+authors = ["David Bernard"]
+description = "A rust client for dgraph."
+readme = "README.md"
+license = "CC-0"
+keywords = ["dgraph", "grpc"]
+repository = "https://github.com/davidB/dgraph_client-rs"
+homepage = "https://github.com/davidB/dgraph_client-rs"
 
 [dependencies]
 grpcio = "0.2"
