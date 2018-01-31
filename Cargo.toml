@@ -7,3 +7,12 @@ authors = ["David Bernard <david.bernard.31@gmail.com>"]
 grpcio = "0.2"
 futures = "^0.1.15"
 protobuf = "1.2"
+
+[dev-dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+slog = "^2"
+slog-async = "^2"
+slog-term = "^2"

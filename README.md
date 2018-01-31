@@ -11,6 +11,21 @@ from [dgraph site]( https://dgraph.io):
 
 > Dgraph's goal is to provide Google production level scale and throughput, with low enough latency to be serving real time user queries, over terabytes of structured data. Dgraph supports GraphQL-like query syntax, and responds in JSON and Protocol Buffers over GRPC and HTTP.
 
+## Samples
+
+see [examples](examples)
+
+### examples/dgraph_tuto01
+Sample adpated from go sample at https://docs.dgraph.io/clients/
+
+```sh
+# launch dgraph (grpc on localhost:9080)
+# see doc of dgraph
+
+# run
+cargo run --example dgraph_tuto01
+```
+
 ## Build
 
 The lib used [grpcio](https://crates.io/crates/grpcio) to generate the rust code from grpc's proto file.
