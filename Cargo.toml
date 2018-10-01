@@ -10,7 +10,7 @@ repository = "https://github.com/davidB/dgraph_client-rs"
 homepage = "https://github.com/davidB/dgraph_client-rs"
 
 [dependencies]
-grpcio = "0.3"
+grpcio = "0.4"
 futures = "^0.1.15"
 protobuf = "2.0"
 
